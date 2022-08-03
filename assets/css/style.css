@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+    justify-content: space-between;
+}
+.header {
+    background-color: #272f54;
+    height: 100px;
+    display: flex;
+    width: 100%;
+}
+
+.logo-img {
+    display: block;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cb7802;
+    height: 37px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.menu-item{
+    margin: 0 40px;
+}
+.menu-item a{
+    color: white;
+    display: inline-block;
+}
+.search-header{
+    margin-right: 15px;
+}
+.search-input{
+    margin-right: 10px;
+}
+.search-btn{
+    background-color: #272f54;
+    color: white;
+    width: 94px;
+    border: 1px solid white;
+}
+.banner-img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.title-study{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+@media (hover: hover) {
+    .menu-item {
+      position: relative;
+      transition: all 0.2s linear;
+    }
+    .menu-item:after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: auto;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background-color: white;
+      transition: all 0.2s linear;
+      transition: all 0.2s linear;
+    }
+    .menu-item:hover {
+      color: white;
+    }
+    .menu-item:hover:after {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+  }
+
+.new-item{
+    border: 1px solid #333;
+    max-width: 400px;
+    max-height: 100%;
+    padding: 12px 27px 0 27px;
+}
+
+.item-img{
+    width: 100%;
+}
+.title-new{
+    color: #ad3f00;
+    margin-top: 15px;
+}   
+
+.new-desc{
+    margin-top: 20px;
+}
+
+footer{
+    margin-top: 15px;
+    background-color: #272f54;
+    height: 50px;
+    display: flex;
+    width: 100%;
+}
+
+.name-student{
+    color: white;
+    margin: auto;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition:  all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
